@@ -46,3 +46,22 @@ Run the script with the following command:
 
 ```sh
 python src/slides_refactor.py <slides_url> --save-path <save_path>
+```
+
+## Script Details
+
+The script performs the following tasks:
+
+1. **Setup WebDriver:** Configures and launches a headless Firefox browser.
+2. **Capture Slides:** Navigates through the slides and captures screenshots.
+3. **Generate PDF:** Compiles the screenshots into a single PDF file.
+4. **Cleanup:** Removes temporary screenshot files.
+
+### Functions
+
+- **`setup_driver(url):`** Configures the Firefox WebDriver.
+- **`take_screenshot(driver, page, save_path):`** Captures a screenshot of the current slide.
+- **`capture_presentation(url, save_path):`** Orchestrates the process of capturing all slides.
+- **`create_pdf(save_path, filename="myslides"):`** Creates a PDF from the captured screenshots.
+- **`remove_temp_files(save_path):`** Removes temporary screenshot files.
+- **`main(slides_url, save_path):`** Main function to run the script.
