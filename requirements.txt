@@ -1,0 +1,14 @@
+certifi==2024.6.2
+charset-normalizer==3.3.2
+fpdf==1.7.2
+idna==3.7
+jedi==0.19.1
+packaging==24.1
+parso==0.8.4
+pillow==10.3.0
+python-dotenv==1.0.1
+requests==2.32.3
+selenium==3.8.0
+setuptools==70.0.0
+urllib3==2.2.1
+wheel==0.43.0
